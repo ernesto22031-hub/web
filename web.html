@@ -853,84 +853,6 @@
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(43, 210, 158, 0.16);
         }
-        .blog-photo-chooser {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: var(--border-radius);
-            padding: 22px;
-            margin-bottom: 28px;
-        }
-        .blog-photo-chooser-row {
-            display: grid;
-            grid-template-columns: 1fr 1.8fr;
-            gap: 18px;
-            align-items: end;
-        }
-        .blog-photo-chooser-field label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            letter-spacing: 0.5px;
-        }
-        .blog-photo-select,
-        .blog-photo-url-wrap input {
-            width: 100%;
-            padding: 12px 14px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text);
-            font-size: 0.95rem;
-        }
-        .blog-photo-url-wrap {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        .blog-photo-url-wrap button {
-            white-space: nowrap;
-            padding: 12px 18px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            background: var(--primary);
-            color: #fff;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-weight: 600;
-        }
-        .blog-photo-url-wrap button:hover {
-            background: var(--primary-light);
-        }
-        .blog-photo-samples {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 16px;
-            align-items: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-        .sample-image-btn {
-            padding: 10px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            background: transparent;
-            color: var(--text);
-            border-radius: 50px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-size: 0.85rem;
-        }
-        .sample-image-btn:hover {
-            background: var(--primary);
-            color: #fff;
-        }
-        @media (max-width: 900px) {
-            .blog-photo-chooser-row {
-                grid-template-columns: 1fr;
-            }
-        }
 
         /* ========== CONTACT ========== */
         .contact-section {
@@ -999,480 +921,164 @@
         .form-group select:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(230, 57, 0, 0.15);
+            box-shadow: 0 0 0 3px rgba(230, 57, 0, 0.1);
         }
         .form-group textarea {
             min-height: 120px;
         }
-        .form-submit {
-            width: 100%;
-        }
-        .form-success-msg {
-            display: none;
-            background: rgba(46, 204, 113, 0.15);
-            color: var(--success);
-            padding: 14px;
-            border-radius: var(--border-radius);
-            text-align: center;
-            font-weight: 500;
-            margin-top: 12px;
-        }
-        .form-success-msg.show {
-            display: block;
-            animation: fadeInUp 0.4s ease;
-        }
-
-        /* ========== FOUNDERS SECTION ========== */
-        .founders-section {
-            background: linear-gradient(135deg, rgba(230, 57, 0, 0.08) 0%, rgba(230, 57, 0, 0.03) 100%);
-        }
-        .founders-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-        }
-        .founders-image {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: var(--shadow-hover);
-        }
-        .founders-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-        .founders-image:hover img {
-            transform: scale(1.05);
-        }
-        .founders-content h2 {
-            font-size: 2.4rem;
-            margin-bottom: 12px;
-        }
-        .founders-content h2 span {
-            color: var(--primary);
-        }
-        .founders-content .section-divider {
-            margin: 16px 0 24px;
-        }
-        .founders-content p {
-            color: var(--text-muted);
-            line-height: 1.8;
-            margin-bottom: 16px;
+        .contact-submit {
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
             font-size: 0.95rem;
-        }
-        .founders-highlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .founders-highlight {
-            background: var(--dark-2);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary);
+            cursor: pointer;
             transition: var(--transition);
-        }
-        .founders-highlight:hover {
-            background: var(--gray);
-        }
-        .founders-highlight strong {
-            display: block;
-            color: var(--primary);
-            font-size: 0.85rem;
-            letter-spacing: 1px;
+            width: 100%;
             text-transform: uppercase;
-            margin-bottom: 6px;
+            letter-spacing: 1px;
         }
-        .founders-highlight p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-        @media (max-width: 768px) {
-            .founders-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            .founders-content h2 {
-                font-size: 2rem;
-            }
-            .founders-highlights {
-                grid-template-columns: 1fr;
-            }
+        .contact-submit:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(230, 57, 0, 0.4);
         }
 
         /* ========== FOOTER ========== */
-        .footer {
-            background: var(--dark);
+        footer {
+            background: var(--dark-2);
             border-top: 1px solid rgba(255, 255, 255, 0.06);
             padding: 48px 24px 24px;
-            text-align: center;
         }
-        .footer-inner {
+        .footer-content {
             max-width: var(--max-width);
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .footer-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+        .footer-section a {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .footer-section a:hover {
+            color: var(--primary);
         }
         .footer-social {
             display: flex;
-            gap: 16px;
-            justify-content: center;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
         }
         .footer-social a {
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
+            background: rgba(230, 57, 0, 0.12);
             border-radius: 50%;
-            background: var(--gray);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
-            color: var(--text);
-            transition: var(--transition);
+            color: var(--primary);
+            margin: 0;
         }
         .footer-social a:hover {
             background: var(--primary);
             color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(230, 57, 0, 0.4);
         }
-        .footer-nav {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .footer-nav a {
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             color: var(--text-muted);
             font-size: 0.85rem;
-            transition: var(--transition);
-        }
-        .footer-nav a:hover {
-            color: var(--primary-light);
-        }
-        .footer p {
-            color: var(--text-muted);
-            font-size: 0.8rem;
-        }
-
-        /* ========== COOKIE BANNER ========== */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--dark-2);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 16px 24px;
-            z-index: 3000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5);
-            transform: translateY(0);
-            transition: transform 0.4s ease;
-        }
-        .cookie-banner.hidden-banner {
-            transform: translateY(120%);
-            pointer-events: none;
-        }
-        .cookie-banner p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0;
-        }
-        .cookie-banner a {
-            color: var(--primary-light);
-            text-decoration: underline;
-        }
-        .cookie-btns {
-            display: flex;
-            gap: 10px;
-        }
-        .btn-cookie {
-            padding: 9px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            cursor: pointer;
-            border: none;
-            transition: var(--transition);
-            font-family: 'Poppins', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .btn-accept {
-            background: var(--primary);
-            color: #fff;
-        }
-        .btn-accept:hover {
-            background: var(--primary-light);
-        }
-        .btn-reject {
-            background: transparent;
-            color: var(--text);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        .btn-reject:hover {
-            border-color: #fff;
-        }
-
-        /* ========== BACK TO TOP ========== */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 44px;
-            height: 44px;
-            background: var(--primary);
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 900;
-            opacity: 0;
-            pointer-events: none;
-            transition: var(--transition);
-            border: none;
-            font-size: 1.1rem;
-            box-shadow: 0 6px 20px rgba(230, 57, 0, 0.4);
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .back-to-top:hover {
-            background: var(--primary-light);
-            transform: translateY(-3px);
         }
 
         /* ========== RESPONSIVE ========== */
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
+            }
+            .section {
+                padding: 60px 24px;
             }
             .about-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 32px;
             }
-            .about-image img {
-                height: 320px;
-            }
-            .carousel-slide {
-                height: 380px;
-            }
-            .section-header h2 {
-                font-size: 2rem;
-            }
-        }
-        @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
             .mobile-menu-btn {
                 display: block;
             }
-            .mobile-menu {
-                display: block;
-            }
-            .hero-content h1 {
-                font-size: 2.2rem;
-                letter-spacing: -1px;
-            }
-            .hero-content p {
-                font-size: 1rem;
-            }
-            .hero {
-                min-height: 600px;
-            }
-            .hero-parallax-bg {
-                background-attachment: scroll;
-            }
-            .carousel-slide {
-                height: 300px;
-            }
-            .carousel-slide-content h3 {
-                font-size: 1.3rem;
-            }
-            .carousel-slide-content {
-                padding: 20px;
-            }
-            .section {
-                padding: 50px 16px;
-            }
-            .section-header h2 {
-                font-size: 1.7rem;
-            }
             .services-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
             .blog-grid {
                 grid-template-columns: 1fr;
             }
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .about-stats {
-                gap: 20px;
-            }
-            .about-stat strong {
-                font-size: 2rem;
-            }
-            .btn {
-                padding: 12px 24px;
-                font-size: 0.85rem;
-            }
-            .cookie-banner {
-                flex-direction: column;
-                text-align: center;
-                padding: 14px 16px;
-            }
-        }
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 1.8rem;
-            }
-            .services-grid {
+            .footer-content {
                 grid-template-columns: 1fr;
-            }
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            .carousel-slide {
-                height: 240px;
-            }
-            .carousel-btn {
-                width: 36px;
-                height: 36px;
-                font-size: 1rem;
-            }
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            .hero-buttons .btn {
-                width: 100%;
-                text-align: center;
+                gap: 24px;
             }
         }
     </style>
 </head>
 <body>
-
     <!-- ========== HEADER ========== -->
     <header class="header" id="header">
         <div class="header-inner">
-            <a href="#home" class="logo">
-                <div class="logo-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-dumbbell"></i></div>
                 <div>
-                    Urban<span>Fit</span>
-                    <span class="logo-tagline">Train Hard. Stay Strong.</span>
+                    <span>Urban</span>FIT
+                    <div class="logo-tagline">Fitness</div>
                 </div>
-            </a>
-            <nav class="nav-links" id="navLinks">
+            </div>
+            <nav class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
-                <a href="#about">About Us</a>
-                <a href="#founders">Founders</a>
-                <a href="#gallery-section">Gallery</a>
+                <a href="#about">About</a>
                 <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-                <a href="#contact" class="nav-cta">Join Now</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-                <i class="fa-solid fa-bars"></i>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
-
-    <!-- Mobile Menu -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#founders">Founders</a>
-        <a href="#gallery-section">Gallery</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" style="color:var(--primary);">Join Now</a>
-    </div>
 
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home">
-        <div class="hero-parallax-bg" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-parallax-bg"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="hero-badge">🏆 #1 Small Gym in the City</div>
-            <h1>Transform Your <span>Body</span><br>Transform Your <span>Life</span></h1>
-            <p>At UrbanFit, we combine cutting-edge training, motivating group classes, and a community that pushes you to be your best. Your fitness journey starts here.</p>
+            <div class="hero-badge">Welcome to UrbanFit</div>
+            <h1>Transform Your <span>Body</span></h1>
+            <p>Join our state-of-the-art gym with expert trainers, modern equipment, and a supportive community.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Start Your Journey</a>
-                <a href="#services" class="btn btn-outline">Explore Services</a>
+                <button class="btn btn-primary">Start Training</button>
+                <button class="btn btn-outline">Learn More</button>
             </div>
         </div>
-        <div class="hero-scroll-indicator" id="scrollIndicator">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- ========== CAROUSEL SECTION ========== -->
-    <section class="carousel-section" id="carousel-section">
-        <div style="max-width:var(--max-width);margin:0 auto;padding:60px 24px 20px;">
-            <div class="section-header">
-                <span class="badge">Experience UrbanFit</span>
-                <h2>See Our <span>Facilities</span></h2>
-                <div class="section-divider"></div>
-                <p>Take a tour through our state-of-the-art gym spaces and training areas.</p>
-            </div>
-        </div>
-        <div class="carousel-container" style="margin-bottom:60px;">
-            <div class="carousel-track" id="carouselTrack">
-                <div class="carousel-slide">
-                    <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=2" alt="Modern gym floor with equipment" loading="lazy">
-                    <div class="carousel-slide-content">
-                        <h3>State-of-the-Art Equipment</h3>
-                        <p>Top-tier machines and free weights for all fitness levels.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=2" alt="Group fitness class" loading="lazy">
-                    <div class="carousel-slide-content">
-                        <h3>Energizing Group Classes</h3>
-                        <p>Yoga, Spinning, HIIT, and more — led by expert trainers.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=2" alt="Personal training session" loading="lazy">
-                    <div class="carousel-slide-content">
-                        <h3>Personal Training</h3>
-                        <p>One-on-one coaching tailored to your unique goals.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=2" alt="Functional training area" loading="lazy">
-                    <div class="carousel-slide-content">
-                        <h3>Functional Training Zone</h3>
-                        <p>Kettlebells, battle ropes, and plyometric stations.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="carousel-btn next" id="carouselNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
-            <div class="carousel-dots" id="carouselDots"></div>
-        </div>
+        <div class="hero-scroll-indicator"><i class="fas fa-chevron-down"></i></div>
     </section>
 
     <!-- ========== SERVICES ========== -->
@@ -1481,96 +1087,85 @@
             <span class="badge">What We Offer</span>
             <h2>Our <span>Services</span></h2>
             <div class="section-divider"></div>
-            <p>From group classes to personal training, we provide everything you need to reach your fitness goals.</p>
+            <p>Comprehensive fitness solutions tailored to your goals</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
-                <h3>Group Classes</h3>
-                <p>Yoga, Spinning, HIIT, Pilates, and Zumba — find the class that fits your vibe and schedule.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-user-gear"></i></div>
+                <div class="service-icon"><i class="fas fa-user-tie"></i></div>
                 <h3>Personal Training</h3>
-                <p>Custom workout plans and dedicated one-on-one sessions with our certified trainers.</p>
+                <p>One-on-one coaching with certified trainers to achieve your fitness goals.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
-                <h3>Open Gym Access</h3>
-                <p>Full access to our modern equipment: cardio machines, free weights, and strength stations.</p>
+                <div class="service-icon"><i class="fas fa-users"></i></div>
+                <h3>Group Classes</h3>
+                <p>High-energy group sessions including yoga, spinning, HIIT, and more.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <h3>Online Class Booking</h3>
-                <p>Reserve your spot in any class with our easy-to-use digital booking system — no more waiting.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>Progress Tracking</h3>
-                <p>Monitor your improvements with digital tracking tools and regular fitness assessments.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-apple-whole"></i></div>
-                <h3>Nutrition Guidance</h3>
-                <p>Basic nutrition plans and advice to complement your training and maximize results.</p>
+                <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
+                <h3>State-of-Art Equipment</h3>
+                <p>Latest fitness machines and free weights for all training styles.</p>
             </div>
         </div>
     </section>
 
-    <!-- ========== ABOUT US ========== -->
-    <section class="about-section" id="about">
-        <div class="section" style="padding-top:70px;padding-bottom:70px;">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="UrbanFit gym interior" loading="lazy">
+    <!-- ========== CAROUSEL ========== -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yoga Class">
+                    <div class="carousel-slide-content">
+                        <h3>Yoga Classes</h3>
+                        <p>Find peace and strength through our specialized yoga programs.</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <span class="badge" style="background:rgba(230,57,0,0.15);color:var(--primary-light);padding:6px 16px;border-radius:50px;font-weight:600;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;">About UrbanFit</span>
-                    <h2>More Than a Gym — <span>A Community</span></h2>
-                    <div class="section-divider" style="margin:16px 0;"></div>
-                    <p>UrbanFit was born from a simple idea: create a space where everyone feels welcome to pursue their fitness goals. We are a small, independent gym that focuses on quality over quantity — offering personalized attention, a supportive atmosphere, and the tools you need to succeed.</p>
-                    <p>Our team of 4 dedicated professionals works every day to make UrbanFit a place where you can grow stronger, both physically and mentally. We believe fitness is for everyone, regardless of age or experience level.</p>
-                    <div class="about-stats">
-                        <div class="about-stat"><strong>350+</strong><span>Active Members</span></div>
-                        <div class="about-stat"><strong>20+</strong><span>Weekly Classes</span></div>
-                        <div class="about-stat"><strong>4</strong><span>Expert Trainers</span></div>
-                        <div class="about-stat"><strong>5★</strong><span>Rating</span></div>
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Weight Training">
+                    <div class="carousel-slide-content">
+                        <h3>Weight Training</h3>
+                        <p>Build muscle and strength with professional guidance.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/4164840/pexels-photo-4164840.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cardio">
+                    <div class="carousel-slide-content">
+                        <h3>Cardio Training</h3>
+                        <p>Improve your cardiovascular health and endurance.</p>
                     </div>
                 </div>
             </div>
+            <button class="carousel-btn prev" id="carouselPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" id="carouselNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
         </div>
     </section>
 
-    <!-- ========== FOUNDERS ========== -->
-    <section class="founders-section" id="founders">
-        <div class="section">
-            <div class="founders-grid">
-                <div class="founders-image">
-                    <img src="https://images.pexels.com/photos/3808215/pexels-photo-3808215.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="UrbanFit Founders Team" loading="lazy">
-                </div>
-                <div class="founders-content">
-                    <span class="badge" style="background:rgba(230,57,0,0.15);color:var(--primary-light);padding:6px 16px;border-radius:50px;font-weight:600;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;">Meet Our Founders</span>
-                    <h2>Driven by <span>Passion</span></h2>
-                    <div class="section-divider"></div>
-                    <p>UrbanFit was founded in 2018 by four fitness enthusiasts who shared a common vision: to transform the fitness industry by creating an inclusive, modern gym that prioritizes member experience above everything else. With combined experience of over 40 years in personal training, nutrition coaching, and gym management, our founders built UrbanFit from the ground up with one goal in mind — making fitness accessible to everyone.</p>
-                    <p>Today, we're proud of what we've built. From humble beginnings in a small space with basic equipment, UrbanFit has grown into a thriving community hub with state-of-the-art facilities, diverse class offerings, and a team of certified professionals dedicated to your success. But our journey doesn't stop here — we continue to innovate and expand, always keeping our members' needs at the heart of every decision.</p>
-                    <div class="founders-highlights">
-                        <div class="founders-highlight">
-                            <strong>💪 Expert Leadership</strong>
-                            <p>Each founder brings specialized expertise in fitness, nutrition, and community building.</p>
-                        </div>
-                        <div class="founders-highlight">
-                            <strong>🎯 Member-First Philosophy</strong>
-                            <p>Every decision we make is guided by what's best for our members' health and happiness.</p>
-                        </div>
-                        <div class="founders-highlight">
-                            <strong>🌟 Continuous Innovation</strong>
-                            <p>We invest in latest equipment and training methods to keep UrbanFit at the cutting edge.</p>
-                        </div>
-                        <div class="founders-highlight">
-                            <strong>🤝 Community Spirit</strong>
-                            <p>We believe fitness is a journey best shared. Our founders embody the inclusive culture we've built.</p>
-                        </div>
+    <!-- ========== ABOUT ========== -->
+    <section class="section about-section" id="about">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="About UrbanFit">
+            </div>
+            <div class="about-text">
+                <h2>About <span>UrbanFit</span></h2>
+                <p>UrbanFit is a premium gym dedicated to transforming lives through fitness. With over 10 years of experience, we've helped thousands of members achieve their health and fitness goals.</p>
+                <p>Our state-of-the-art facilities, combined with expert trainers and a welcoming community, make UrbanFit the perfect place to start your fitness journey.</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <strong>10K+</strong>
+                        <span>Members</span>
+                    </div>
+                    <div class="about-stat">
+                        <strong>50+</strong>
+                        <span>Classes/Week</span>
+                    </div>
+                    <div class="about-stat">
+                        <strong>25+</strong>
+                        <span>Expert Trainers</span>
                     </div>
                 </div>
             </div>
@@ -1578,618 +1173,374 @@
     </section>
 
     <!-- ========== GALLERY ========== -->
-    <section class="section" id="gallery-section">
+    <section class="section">
         <div class="section-header">
-            <span class="badge">Our Space</span>
-            <h2>Photo <span>Gallery</span></h2>
+            <span class="badge">Photo Gallery</span>
+            <h2>Our <span>Facilities</span></h2>
             <div class="section-divider"></div>
-            <p>Take a look inside UrbanFit and see where the magic happens.</p>
+            <p>Explore our modern gym facilities</p>
         </div>
-        <div class="gallery-grid" id="galleryGrid">
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Gym equipment" loading="lazy">
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gym Facility">
             </div>
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Group class" loading="lazy">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weight Training">
             </div>
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Personal training" loading="lazy">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/4164840/pexels-photo-4164840.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/4164840/pexels-photo-4164840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cardio">
             </div>
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Functional area" loading="lazy">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gym Class">
             </div>
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Gym interior" loading="lazy">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/2204196/pexels-photo-2204196.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/2204196/pexels-photo-2204196.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness Equipment">
             </div>
-            <div class="gallery-item" data-src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2">
-                <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Weight training" loading="lazy">
+            <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/8436579/pexels-photo-8436579.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                <img src="https://images.pexels.com/photos/8436579/pexels-photo-8436579.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Locker Room">
             </div>
         </div>
     </section>
-    <!-- Gallery Lightbox -->
-    <div class="gallery-lightbox" id="galleryLightbox">
-        <span class="gallery-lightbox-close" id="lightboxClose">&times;</span>
-        <img src="" alt="Gallery image" id="lightboxImg">
-    </div>
 
     <!-- ========== BLOG ========== -->
     <section class="section" id="blog">
         <div class="section-header">
-            <span class="badge">Read & Learn</span>
+            <span class="badge">Fitness Tips & News</span>
             <h2>Our <span>Blog</span></h2>
             <div class="section-divider"></div>
-            <p>Tips, insights, and stories to inspire your fitness journey.</p>
-            <p>Aquí se pueden usar hasta 10 categorías en los blogs.</p>
+            <p>Expert advice and fitness tips to help you on your journey</p>
         </div>
-        <!-- Blog Filter -->
-        <div class="blog-filter-buttons" id="blogFilters">
-            <button class="blog-filter-btn active" data-category="all">All Posts</button>
-            <button class="blog-filter-btn" data-category="fitness-tips">Fitness Tips</button>
-            <button class="blog-filter-btn" data-category="nutrition">Nutrition</button>
-            <button class="blog-filter-btn" data-category="wellness">Wellness</button>
-            <button class="blog-filter-btn" data-category="training-programs">Training Programs</button>
-            <button class="blog-filter-btn" data-category="gym-news">Gym News</button>
-            <button class="blog-filter-btn" data-category="recovery">Recovery</button>
-            <button class="blog-filter-btn" data-category="mindset">Mindset</button>
+        <div class="blog-filter-buttons">
+            <button class="blog-filter-btn active" onclick="filterBlog('all')">All</button>
+            <button class="blog-filter-btn" onclick="filterBlog('tips')">Tips</button>
+            <button class="blog-filter-btn" onclick="filterBlog('nutrition')">Nutrition</button>
+            <button class="blog-filter-btn" onclick="filterBlog('workouts')">Workouts</button>
         </div>
-        <div class="blog-photo-chooser" id="blogPhotoChooser">
-            <div class="blog-photo-chooser-row">
-                <div class="blog-photo-chooser-field">
-                    <label for="blogCardSelect">Choose a blog post</label>
-                    <select id="blogCardSelect" class="blog-photo-select">
-                        <option value="0">Post 1 — Warm-Up Exercises</option>
-                        <option value="1">Post 2 — Pre/Post Workout Meals</option>
-                        <option value="2">Post 3 — Rest Days Importance</option>
-                        <option value="3">Post 4 — 8-Week Strength Program</option>
-                        <option value="4">Post 5 — Online Class Booking</option>
-                        <option value="5">Post 6 — Winter Motivation</option>
-                        <option value="6">Post 7 — Recovery Smoothies</option>
-                        <option value="7">Post 8 — Beginner Weight Training</option>
-                        <option value="8">Post 9 — Yoga for Stress Relief</option>
-                        <option value="9">Post 10 — Loyalty Rewards</option>
-                    </select>
+        <div class="blog-grid">
+            <div class="blog-card" data-category="tips">
+                <div class="blog-card-image">
+                    <img src="https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?auto=compress&cs=tinysrgb&w=600" alt="10 Tips">
+                    <span class="blog-category">Tips</span>
                 </div>
-                <div class="blog-photo-chooser-field">
-                    <label for="blogImageUrl">Paste image URL</label>
-                    <div class="blog-photo-url-wrap">
-                        <input type="url" id="blogImageUrl" placeholder="Paste an image URL and click Apply" autocomplete="off">
-                        <button type="button" id="applyBlogImageBtn">Apply image</button>
+                <div class="blog-card-body">
+                    <h3><a href="#">10 Tips to Stay Motivated</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 15, 2024
+                    </div>
+                    <p>Motivation is key to achieving your fitness goals. Here are our top 10 tips to stay motivated throughout your fitness journey.</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">fitness</span>
+                        <span class="blog-tag">motivation</span>
                     </div>
                 </div>
             </div>
-            <div class="blog-photo-samples">
-                <span>Quick sample images:</span>
-                <button type="button" class="sample-image-btn" data-src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2">Fitness</button>
-                <button type="button" class="sample-image-btn" data-src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2">Nutrition</button>
-                <button type="button" class="sample-image-btn" data-src="https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2">Wellness</button>
-                <button type="button" class="sample-image-btn" data-src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2">Training</button>
-                <button type="button" class="sample-image-btn" data-src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2">Gym News</button>
+            <div class="blog-card" data-category="nutrition">
+                <div class="blog-card-image">
+                    <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nutrition">
+                    <span class="blog-category">Nutrition</span>
+                </div>
+                <div class="blog-card-body">
+                    <h3><a href="#">Pre-Workout Nutrition Guide</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 12, 2024
+                    </div>
+                    <p>Learn what to eat before your workout to maximize performance and recovery. Our experts break down the best pre-workout meals.</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">nutrition</span>
+                        <span class="blog-tag">diet</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Blog Grid -->
-        <div class="blog-grid" id="blogGrid">
-            <!-- Post 1 -->
-            <article class="blog-card" data-category="fitness-tips">
+            <div class="blog-card" data-category="workouts">
                 <div class="blog-card-image">
-                    <span class="blog-category">Fitness Tips</span>
-                    <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Fitness tips" loading="lazy">
+                    <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HIIT">
+                    <span class="blog-category">Workouts</span>
                 </div>
                 <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Oct 12, 2024 &nbsp; <i class="fa-regular fa-user"></i> Trainer Mike</div>
-                    <h3><a href="#">5 Essential Warm-Up Exercises Before Every Workout</a></h3>
-                    <p>Discover the five warm-up moves that will prepare your body, prevent injuries, and boost your performance in any training session.</p>
-                    <div class="blog-tags"><span class="blog-tag">warm-up</span><span class="blog-tag">beginners</span></div>
+                    <h3><a href="#">30-Minute HIIT Workout</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 10, 2024
+                    </div>
+                    <p>Burn calories and boost your metabolism with our high-intensity interval training routine. Perfect for busy schedules!</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">workout</span>
+                        <span class="blog-tag">hiit</span>
+                    </div>
                 </div>
-            </article>
-            <!-- Post 2 -->
-            <article class="blog-card" data-category="nutrition">
+            </div>
+            <div class="blog-card" data-category="tips">
                 <div class="blog-card-image">
+                    <img src="https://images.pexels.com/photos/4164840/pexels-photo-4164840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Recovery">
+                    <span class="blog-category">Tips</span>
+                </div>
+                <div class="blog-card-body">
+                    <h3><a href="#">The Importance of Recovery</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 8, 2024
+                    </div>
+                    <p>Rest and recovery are just as important as your workouts. Discover how proper recovery can improve your fitness results.</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">recovery</span>
+                        <span class="blog-tag">health</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card" data-category="nutrition">
+                <div class="blog-card-image">
+                    <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Supplements">
                     <span class="blog-category">Nutrition</span>
-                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Nutrition" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Oct 8, 2024 &nbsp; <i class="fa-regular fa-user"></i> Coach Sarah</div>
-                    <h3><a href="#">What to Eat Before and After Your Workout</a></h3>
-                    <p>Learn the best pre- and post-workout meals to fuel your body, maximize recovery, and build lean muscle effectively.</p>
-                    <div class="blog-tags"><span class="blog-tag">meal-plan</span><span class="blog-tag">recovery</span></div>
+                    <h3><a href="#">Supplements That Actually Work</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 5, 2024
+                    </div>
+                    <p>Not all supplements are created equal. We break down which supplements are scientifically proven to enhance your performance.</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">supplements</span>
+                        <span class="blog-tag">nutrition</span>
+                    </div>
                 </div>
-            </article>
-            <!-- Post 3 -->
-            <article class="blog-card" data-category="wellness">
+            </div>
+            <div class="blog-card" data-category="workouts">
                 <div class="blog-card-image">
-                    <span class="blog-category">Wellness</span>
-                    <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Wellness" loading="lazy">
+                    <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strength">
+                    <span class="blog-category">Workouts</span>
                 </div>
                 <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Oct 3, 2024 &nbsp; <i class="fa-regular fa-user"></i> Trainer Lisa</div>
-                    <h3><a href="#">The Importance of Rest Days in Your Routine</a></h3>
-                    <p>Rest is when your body rebuilds. Understand why taking days off is crucial for muscle growth and injury prevention.</p>
-                    <div class="blog-tags"><span class="blog-tag">recovery</span><span class="blog-tag">self-care</span></div>
+                    <h3><a href="#">Build Strength in 12 Weeks</a></h3>
+                    <div class="blog-meta">
+                        <i class="far fa-calendar"></i> May 1, 2024
+                    </div>
+                    <p>Follow our proven 12-week strength training program designed to help you build muscle and increase your lifting capacity.</p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">strength</span>
+                        <span class="blog-tag">training</span>
+                    </div>
                 </div>
-            </article>
-            <!-- Post 4 -->
-            <article class="blog-card" data-category="training-programs">
-                <div class="blog-card-image">
-                    <span class="blog-category">Training Programs</span>
-                    <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Training" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Sep 28, 2024 &nbsp; <i class="fa-regular fa-user"></i> Trainer Mike</div>
-                    <h3><a href="#">Our New 8-Week Strength Building Program</a></h3>
-                    <p>Introducing our structured 8-week program designed to progressively increase your strength with safe, effective methods.</p>
-                    <div class="blog-tags"><span class="blog-tag">strength</span><span class="blog-tag">program</span></div>
-                </div>
-            </article>
-            <!-- Post 5 -->
-            <article class="blog-card" data-category="gym-news">
-                <div class="blog-card-image">
-                    <span class="blog-category">Gym News</span>
-                    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Gym news" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Sep 20, 2024 &nbsp; <i class="fa-regular fa-user"></i> UrbanFit Team</div>
-                    <h3><a href="#">UrbanFit Launches Online Class Booking System</a></h3>
-                    <p>We've gone digital! Now you can book your favorite classes online from anywhere, anytime — no more paper sign-ups.</p>
-                    <div class="blog-tags"><span class="blog-tag">digital</span><span class="blog-tag">booking</span></div>
-                </div>
-            </article>
-            <!-- Post 6 -->
-            <article class="blog-card" data-category="fitness-tips">
-                <div class="blog-card-image">
-                    <span class="blog-category">Fitness Tips</span>
-                    <img src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Fitness tips" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Sep 15, 2024 &nbsp; <i class="fa-regular fa-user"></i> Coach Sarah</div>
-                    <h3><a href="#">How to Stay Motivated During the Winter Months</a></h3>
-                    <p>Shorter days don't mean shorter workouts. Tips to keep your fitness momentum going when the temperature drops.</p>
-                    <div class="blog-tags"><span class="blog-tag">motivation</span><span class="blog-tag">seasonal</span></div>
-                </div>
-            </article>
-            <!-- Post 7 -->
-            <article class="blog-card" data-category="nutrition">
-                <div class="blog-card-image">
-                    <span class="blog-category">Nutrition</span>
-                    <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Nutrition" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Sep 8, 2024 &nbsp; <i class="fa-regular fa-user"></i> Trainer Lisa</div>
-                    <h3><a href="#">Smoothie Recipes for Post-Workout Recovery</a></h3>
-                    <p>Three delicious and protein-packed smoothie recipes that will help your muscles recover faster after intense training.</p>
-                    <div class="blog-tags"><span class="blog-tag">recipes</span><span class="blog-tag">protein</span></div>
-                </div>
-            </article>
-            <!-- Post 8 -->
-            <article class="blog-card" data-category="training-programs">
-                <div class="blog-card-image">
-                    <span class="blog-category">Training Programs</span>
-                    <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Training programs" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Aug 30, 2024 &nbsp; <i class="fa-regular fa-user"></i> Trainer Mike</div>
-                    <h3><a href="#">Beginner's Guide to Weight Training</a></h3>
-                    <p>New to lifting? This comprehensive guide walks you through the basics of weight training with proper form and progression.</p>
-                    <div class="blog-tags"><span class="blog-tag">beginners</span><span class="blog-tag">weights</span></div>
-                </div>
-            </article>
-            <!-- Post 9 -->
-            <article class="blog-card" data-category="wellness">
-                <div class="blog-card-image">
-                    <span class="blog-category">Wellness</span>
-                    <img src="https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Wellness" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Aug 22, 2024 &nbsp; <i class="fa-regular fa-user"></i> Coach Sarah</div>
-                    <h3><a href="#">Mindfulness and Movement: Yoga for Stress Relief</a></h3>
-                    <p>Combine mindfulness with physical activity. Our yoga classes help reduce stress while improving flexibility and strength.</p>
-                    <div class="blog-tags"><span class="blog-tag">yoga</span><span class="blog-tag">stress-relief</span></div>
-                </div>
-            </article>
-            <!-- Post 10 -->
-            <article class="blog-card" data-category="gym-news">
-                <div class="blog-card-image">
-                    <span class="blog-category">Gym News</span>
-                    <img src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Gym news" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                    <div class="blog-meta"><i class="fa-regular fa-calendar"></i> Aug 15, 2024 &nbsp; <i class="fa-regular fa-user"></i> UrbanFit Team</div>
-                    <h3><a href="#">New Loyalty Program: Earn Rewards for Every Visit</a></h3>
-                    <p>Introducing the UrbanFit Rewards program — earn points every time you check in and redeem them for exclusive perks.</p>
-                    <div class="blog-tags"><span class="blog-tag">loyalty</span><span class="blog-tag">rewards</span></div>
-                </div>
-            </article>
+            </div>
         </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section class="contact-section" id="contact">
-        <div class="section" style="padding-top:70px;padding-bottom:70px;">
-            <div class="section-header">
-                <span class="badge">Get In Touch</span>
-                <h2>Contact <span>Us</span></h2>
-                <div class="section-divider"></div>
-                <p>Have questions or want to join? Fill out the form and we'll get back to you within 24 hours.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>We'd Love to Hear From You</h3>
-                    <p>Whether you're interested in a membership, have a question about our classes, or just want to say hello — reach out anytime.</p>
-                    <div class="contact-detail">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div><strong>Address</strong><br><span style="color:var(--text-muted);">123 Fitness Street, Barcelona, Spain</span></div>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fa-solid fa-phone"></i>
-                        <div><strong>Phone</strong><br><span style="color:var(--text-muted);">+34 600 123 456</span></div>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div><strong>Email</strong><br><span style="color:var(--text-muted);">info@urbanfit.com</span></div>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fa-solid fa-clock"></i>
-                        <div><strong>Hours</strong><br><span style="color:var(--text-muted);">Mon–Fri: 6:00–22:00 &nbsp;|&nbsp; Sat: 8:00–20:00 &nbsp;|&nbsp; Sun: 9:00–16:00</span></div>
+    <section class="section contact-section" id="contact">
+        <div class="section-header">
+            <span class="badge">Get In Touch</span>
+            <h2>Contact <span>Us</span></h2>
+            <div class="section-divider"></div>
+            <p>Ready to start your fitness journey? Contact us today!</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions about our gym, services, or membership plans? We're here to help!</p>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Address</strong><br>
+                        123 Fitness Street, City, Country
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong><br>
+                        +1 (555) 123-4567
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        info@urbanfit.com
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="">Select a topic...</option>
-                            <option value="membership">Membership Information</option>
-                            <option value="classes">Class Bookings</option>
-                            <option value="personal-training">Personal Training</option>
-                            <option value="other">Other Questions</option>
-                        </select>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Hours</strong><br>
+                        Mon-Fri: 6am - 10pm<br>
+                        Sat-Sun: 8am - 8pm
                     </div>
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-                    <div class="form-success-msg" id="formSuccessMsg">
-                        ✅ Thank you! Your message has been sent successfully. We'll get back to you soon!
-                    </div>
-                </form>
+                </div>
             </div>
+            <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="(555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="How can we help?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="contact-submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-social">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="Follow us on TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="Subscribe on YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" title="Follow us on X"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="mailto:info@urbanfit.com" aria-label="Email" title="Send us an email"><i class="fa-solid fa-envelope"></i></a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UrbanFit</h3>
+                <p>Your destination for fitness excellence.</p>
+                <div class="footer-social">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-            <div class="footer-nav">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#about">About Us</a>
-                <a href="#founders">Founders</a>
-                <a href="#gallery-section">Gallery</a>
                 <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
             </div>
-            <p>&copy; 2024 UrbanFit. All rights reserved. &nbsp;|&nbsp; Designed with ❤️ for fitness enthusiasts.</p>
-            <p style="margin-top:6px;font-size:0.75rem;">Digital Transformation Project — Group 6</p>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#">Personal Training</a>
+                <a href="#">Group Classes</a>
+                <a href="#">Nutrition Plans</a>
+                <a href="#">Membership Plans</a>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 UrbanFit. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- ========== COOKIE BANNER (RGPD) ========== -->
-    <div class="cookie-banner" id="cookieBanner">
-        <p>🍪 This website uses cookies to improve your experience. By continuing, you accept our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a> in compliance with GDPR/RGPD.</p>
-        <div class="cookie-btns">
-            <button class="btn-cookie btn-accept" id="acceptCookies">Accept All</button>
-            <button class="btn-cookie btn-reject" id="rejectCookies">Reject</button>
-        </div>
+    <!-- ========== LIGHTBOX FOR GALLERY ========== -->
+    <div class="gallery-lightbox" id="galleryLightbox" onclick="closeLightbox()">
+        <span class="gallery-lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" src="" alt="">
     </div>
 
-    <!-- ========== BACK TO TOP ========== -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <!-- ========== SCRIPTS ========== -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-
-            // ===== HEADER SCROLL EFFECT =====
+        // ========== HEADER SCROLL EFFECT ==========
+        window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
-            const backToTop = document.getElementById('backToTop');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
 
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 80) {
-                    header.classList.add('scrolled');
-                    backToTop.classList.add('visible');
-                } else {
-                    header.classList.remove('scrolled');
-                    backToTop.classList.remove('visible');
-                }
+        // ========== MOBILE MENU ==========
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        mobileMenuBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
             });
+        });
 
-            // ===== BACK TO TOP =====
-            backToTop.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+        mobileOverlay.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+        });
 
-            // ===== SCROLL INDICATOR =====
-            document.getElementById('scrollIndicator').addEventListener('click', function() {
-                document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-            });
+        // ========== CAROUSEL ==========
+        let currentSlide = 0;
+        const carouselTrack = document.getElementById('carouselTrack');
+        const slides = carouselTrack.querySelectorAll('.carousel-slide');
+        const carouselDots = document.getElementById('carouselDots');
 
-            // ===== MOBILE MENU =====
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileOverlay = document.getElementById('mobileOverlay');
-            let menuOpen = false;
-
-            function toggleMenu() {
-                menuOpen = !menuOpen;
-                mobileMenu.classList.toggle('active', menuOpen);
-                mobileOverlay.classList.toggle('active', menuOpen);
-                mobileMenuBtn.innerHTML = menuOpen ?
-                    '<i class="fa-solid fa-xmark"></i>' :
-                    '<i class="fa-solid fa-bars"></i>';
-                document.body.style.overflow = menuOpen ? 'hidden' : '';
-            }
-
-            mobileMenuBtn.addEventListener('click', toggleMenu);
-            mobileOverlay.addEventListener('click', toggleMenu);
-            document.querySelectorAll('.mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (menuOpen) toggleMenu();
-                });
-            });
-
-            // ===== CAROUSEL =====
-            const track = document.getElementById('carouselTrack');
-            const slides = document.querySelectorAll('.carousel-slide');
-            const prevBtn = document.getElementById('carouselPrev');
-            const nextBtn = document.getElementById('carouselNext');
-            const dotsContainer = document.getElementById('carouselDots');
-            let currentSlide = 0;
-            const totalSlides = slides.length;
-
-            // Create dots
-            for (let i = 0; i < totalSlides; i++) {
+        function createDots() {
+            slides.forEach((_, index) => {
                 const dot = document.createElement('button');
                 dot.classList.add('carousel-dot');
-                if (i === 0) dot.classList.add('active');
-                dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-                dot.addEventListener('click', () => goToSlide(i));
-                dotsContainer.appendChild(dot);
-            }
-            const dots = document.querySelectorAll('.carousel-dot');
-
-            function updateCarousel() {
-                track.style.transform = `translateX(-${currentSlide * 100}%)`;
-                dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
-            }
-
-            function goToSlide(index) {
-                currentSlide = index;
-                updateCarousel();
-            }
-
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            }
-
-            function prevSlide() {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            }
-
-            nextBtn.addEventListener('click', nextSlide);
-            prevBtn.addEventListener('click', prevSlide);
-
-            // Auto-advance carousel every 5 seconds
-            let carouselInterval = setInterval(nextSlide, 5000);
-
-            // Pause on hover
-            const carouselContainer = document.querySelector('.carousel-container');
-            carouselContainer.addEventListener('mouseenter', () => clearInterval(carouselInterval));
-            carouselContainer.addEventListener('mouseleave', () => {
-                carouselInterval = setInterval(nextSlide, 5000);
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                carouselDots.appendChild(dot);
             });
+        }
 
-            // Touch/swipe support
-            let touchStartX = 0;
-            let touchEndX = 0;
-            carouselContainer.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0]
-                    .screenX; });
-            carouselContainer.addEventListener('touchend', (e) => {
-                touchEndX = e.changedTouches[0].screenX;
-                const diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) nextSlide();
-                    else prevSlide();
+        function updateCarousel() {
+            carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        document.getElementById('carouselNext').addEventListener('click', nextSlide);
+        document.getElementById('carouselPrev').addEventListener('click', prevSlide);
+
+        createDots();
+
+        // ========== GALLERY LIGHTBOX ==========
+        function openLightbox(imageSrc) {
+            document.getElementById('galleryLightbox').classList.add('active');
+            document.getElementById('lightboxImage').src = imageSrc;
+        }
+
+        function closeLightbox() {
+            document.getElementById('galleryLightbox').classList.remove('active');
+        }
+
+        // ========== BLOG FILTER ==========
+        function filterBlog(category) {
+            const cards = document.querySelectorAll('.blog-card');
+            const buttons = document.querySelectorAll('.blog-filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.classList.remove('hidden-post');
+                } else {
+                    card.classList.add('hidden-post');
                 }
             });
+        }
 
-            // ===== GALLERY LIGHTBOX =====
-            const lightbox = document.getElementById('galleryLightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxClose = document.getElementById('lightboxClose');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-
-            galleryItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const src = this.getAttribute('data-src');
-                    lightboxImg.src = src;
-                    lightbox.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-
-            lightboxClose.addEventListener('click', closeLightbox);
-            lightbox.addEventListener('click', function(e) {
-                if (e.target === lightbox) closeLightbox();
-            });
-
-            function closeLightbox() {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = '';
-                lightboxImg.src = '';
-            }
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                    closeLightbox();
-                }
-            });
-
-            // ===== BLOG FILTER =====
-            const filterButtons = document.querySelectorAll('.blog-filter-btn');
-            const blogCards = document.querySelectorAll('.blog-card');
-
-            filterButtons.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    filterButtons.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    const category = this.getAttribute('data-category');
-
-                    blogCards.forEach(card => {
-                        if (category === 'all' || card.getAttribute('data-category') ===
-                            category) {
-                            card.classList.remove('hidden-post');
-                        } else {
-                            card.classList.add('hidden-post');
-                        }
-                    });
-                });
-            });
-
-            // ===== BLOG IMAGE CHOOSER =====
-            const blogCardSelect = document.getElementById('blogCardSelect');
-            const blogImageUrl = document.getElementById('blogImageUrl');
-            const applyBlogImageBtn = document.getElementById('applyBlogImageBtn');
-            const sampleImageButtons = document.querySelectorAll('.sample-image-btn');
-            let selectedBlogCard = blogCards[0];
-
-            function updateBlogSelection(index) {
-                if (selectedBlogCard) {
-                    selectedBlogCard.classList.remove('selected-card');
-                }
-                selectedBlogCard = blogCards[index] || blogCards[0];
-                selectedBlogCard.classList.add('selected-card');
-                blogCardSelect.value = Array.prototype.indexOf.call(blogCards, selectedBlogCard).toString();
-            }
-
-            blogCardSelect.addEventListener('change', function() {
-                updateBlogSelection(Number(this.value));
-            });
-
-            applyBlogImageBtn.addEventListener('click', function() {
-                const newSrc = blogImageUrl.value.trim();
-                if (!newSrc) {
-                    alert('Please paste an image URL before applying it to the selected post.');
-                    return;
-                }
-                const img = selectedBlogCard.querySelector('.blog-card-image img');
-                img.src = newSrc;
-                img.alt = 'Custom blog image';
-            });
-
-            sampleImageButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const imageUrl = this.getAttribute('data-src');
-                    blogImageUrl.value = imageUrl;
-                    const img = selectedBlogCard.querySelector('.blog-card-image img');
-                    img.src = imageUrl;
-                    img.alt = this.textContent + ' blog image';
-                });
-            });
-
-            updateBlogSelection(0);
-
-            // ===== CONTACT FORM =====
-            const contactForm = document.getElementById('contactForm');
-            const formSuccessMsg = document.getElementById('formSuccessMsg');
-
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Simulate form submission
-                const submitBtn = contactForm.querySelector('.form-submit');
-                const originalText = submitBtn.textContent;
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-
-                setTimeout(() => {
-                    formSuccessMsg.classList.add('show');
-                    contactForm.reset();
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        formSuccessMsg.classList.remove('show');
-                    }, 5000);
-                }, 1200);
-            });
-
-            // ===== COOKIE BANNER =====
-            const cookieBanner = document.getElementById('cookieBanner');
-            const acceptCookies = document.getElementById('acceptCookies');
-            const rejectCookies = document.getElementById('rejectCookies');
-
-            // Check if user already made a choice
-            if (localStorage.getItem('urbanfit_cookies') === null) {
-                cookieBanner.classList.remove('hidden-banner');
-            } else {
-                cookieBanner.classList.add('hidden-banner');
-            }
-
-            acceptCookies.addEventListener('click', function() {
-                localStorage.setItem('urbanfit_cookies', 'accepted');
-                cookieBanner.classList.add('hidden-banner');
-            });
-
-            rejectCookies.addEventListener('click', function() {
-                localStorage.setItem('urbanfit_cookies', 'rejected');
-                cookieBanner.classList.add('hidden-banner');
-            });
-
-            // ===== SMOOTH SCROLL FOR ALL ANCHOR LINKS =====
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            });
-
-            // ===== PARALLAX EFFECT ON SCROLL =====
-            const parallaxBg = document.querySelector('.hero-parallax-bg');
-            if (parallaxBg && window.innerWidth > 768) {
-                window.addEventListener('scroll', function() {
-                    const scrollY = window.scrollY;
-                    if (scrollY < window.innerHeight) {
-                        parallaxBg.style.transform = `translateY(${scrollY * 0.35}px)`;
-                    }
-                });
-            }
-
-            console.log('🏋️ UrbanFit website loaded successfully!');
-            console.log('📋 Features: Parallax Hero, Carousel, Gallery Lightbox, Blog Filter, Contact Form, Cookie Consent (RGPD), Social Media Links');
-            console.log('🔒 Security recommendations for WordPress: BackWPup, Wordfence, Really Simple SSL, W3 Total Cache, Yoast SEO');
-        });
+        // ========== CONTACT FORM ==========
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
     </script>
 </body>
 </html>
